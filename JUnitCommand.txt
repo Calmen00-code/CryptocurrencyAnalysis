@@ -1,0 +1,12 @@
+javac -cp .:junit-4.10.jar:json-20200518.jar *.java(JUnitTest)
+javac -cp .:junit-4.10.jar:json-20200518.jar JUnitTest.java
+java -cp .:junit-4.10.jar:json-20200518.jar org.junit.runner.JUnitCore JUnitTest
+
+(Normal Run)
+javac -cp .:junit-4.10.jar:json-20200518.jar *.java
+java -cp .:json-20200518.jar cryptoGraph -i
+
+
+alias compile='javac -cp .:junit-4.10.jar:json-20200518.jar *.java'
+alias run='java -Xss512m -Xmx512m -cp .:json-20200518.jar cryptoGraph -i'
+alias runtest='java -cp .:junit-4.10.jar:json-20200518.jar org.junit.runner.JUnitCore JUnitTest
